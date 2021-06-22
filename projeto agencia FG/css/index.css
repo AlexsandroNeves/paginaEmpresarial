@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background: #ECECEC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+ul>li {
+    list-style: none;
+    padding: 25px;
+    /* cursor: pointer; */
+}
+
+li>a {
+    text-transform: uppercase;
+    color: #000;
+
+}
+
+.contato {
+    background: #F86A42;
+    padding: 6px;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+
+}
+
+.banner-img {
+    background-repeat: no-repeat;
+
+    height: 560px;
+    width: 100%;
+}
+
+.sobre {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo-sobre {
+    color: #f86a42;
+    padding: 15px 0;
+}
+
+.informacoes-adicionais {
+    margin-top: 20px;
+}
+
+.texto-sobre {
+    width: 425px;
+    font-size: 16px;
+    line-height: 21px;
+
+}
+
+#empresa {
+    width: 860px;
+    margin: auto;
+
+}
+.imagem-sobre{
+    width:370px; 
+    height:280px;
+}
+
+.botao-informacao {
+    background: #FAAE00;
+    height: 40px;
+    width: 185px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin: auto;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.botao-equipe {
+    width: 245px;
+}
+
+.seta-ajustar {
+    margin-left: 10px;
+}
+.texto-adicional{
+    line-height: 1.5;
+}
+
+.nossa-equipe {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.slick-next{
+    right: 0;
+}
+
+.slicl-prev{
+    left: 0;
+}
+
+footer {
+    padding: 25px;
+    background: #ECECEC;
+}
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 768px) {
+
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    ul{
+        flex-direction: column;
+        display: none;
+    }
+
+    .contato{
+        padding: unset;
+    }
+    .titulo-sobre {
+        padding: 15px 20px;
+    }
+    #empresa {
+        width: 100%;
+    }
+
+    .sobre {
+        flex-direction: column;
+    }
+
+    .secao-imagem-sobre{
+        text-align: center;
+    }
+    .imagem-sobre{
+        width: 90%;
+        height: auto;
+    }
+    
+    .informacoes-adicionais{
+        margin: 15px;
+    }
+    .nossa-equipe{
+        flex-direction: column;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .secao-sobre{
+        margin: 18px;
+    }
+    .texto-sobre{
+        width: 100%;
+        line-height: 1.5;
+    }
+
+
+    .img-equipe{
+        margin-bottom: 5%;
+    }
+
+    ul>li{
+        padding: 0;
+    }
+    .banner-img{
+        height: 250px;
+
+    }
+    .slick-next{
+        right: 0;
+    }
+    .rodape{
+        flex-direction: column;
+    }
+}
