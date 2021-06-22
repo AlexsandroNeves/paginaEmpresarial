@@ -20,26 +20,35 @@
 </head>
 
 <body>
-    <header>
-        <div>
-            <img src="./img/logo.png" width="80" alt="Empresa X">
-        </div>
+    <header class="header">
         <div class="container">
+
+            <div>
+                <img src="./img/logo.png" width="80" alt="Empresa X">
+            </div>
+        </div>
+        <div class="menu">
             <nav>
                 <div class="menuMobile">
                     <div class="mm_line"></div>
                     <div class="mm_line"></div>
                     <div class="mm_line"></div>
                 </div>
-                <ul>
-                    <li><a href="#">Home</a> </li>
-                    <li><a href="#">Empresa</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="# " type="tel" class="contato">+55 11 3564-3099</a></li>
-                </ul>
-            </nav>
+                <div class="ul">
+                </div>
 
+                    <ul>
+                        <li  class="active"><a href="#">Home</a> </li>
+                        <li><a href="#">Empresa</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="# " type="tel" class="contato">+55 11 3564-3099</a></li>
+                    </ul>
+                
+                
+            </nav>
         </div>
+
+
     </header>
     <section>
         <div class="banner">
@@ -55,7 +64,7 @@
 
         <div class="sobre">
             <figure class="secao-imagem-sobre">
-                <img src="img/pexels-photo-288477.jpg" alt="foto empresa"  class="imagem-sobre">
+                <img src="img/pexels-photo-288477.jpg" alt="foto empresa" class="imagem-sobre">
             </figure>
             <div class="secao-sobre">
                 <p class="texto-sobre">
@@ -77,15 +86,16 @@
             </div>
         </div>
         <div class="informacoes-adicionais">
-            <p class="texto-adicional">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate harum minus molestias quidem
+            <p class="texto-adicional">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate harum minus
+                molestias quidem
                 perspiciatis dolorem distinctio veniam, magnam at enim molestiae, repellendus facilis ex sapiente
                 maiores consequatur ea magni maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
-        <a href="#" class="botao-informacao botao-equipe botao-hover ">
+        <div class="botao-informacao botao-equipe botao-hover">
             <p>VEJA NOSSA EQUIPE</p>
-            <i class="fas fa-angle-double-down seta-ajustar"></i>
+            <i class="fas fa-angle-double-down seta-ajustar trasition-button"></i>
 
-        </a>
+        </div>
 
         <div class="nossa-equipe">
             <figure>
@@ -118,34 +128,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <script src="js/script.js"></script>
 
 
     <script>
         $(document).ready(function () {
-            $('.banner').slick({
-
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2500,
-                responsive: [{
-                        breakpoint: 800,
-                        settings: {
-                            infinite: true,
-                            arrows: true,
-                            slidesToShow: 1
-                        }
-                    },
-                    {
-                        breakpoint: 880,
-                        settings: {
-                            infinite: true,
-                            arrows: true,
-                            slidesToShow: 1
-                        }
-                    }
-                ]
-            });
+            carrosel();
+            menuMobile();
+            acessarEquipe();
         });
     </script>
 </body>

@@ -13,6 +13,11 @@ header {
     height: 80px;
 }
 
+header #header{
+    margin-bottom: unset;
+}
+
+
 ul {
     display: flex;
     justify-content: center;
@@ -37,6 +42,12 @@ li>a {
     border-radius: 2px;
     cursor: pointer;
 
+}
+.menuMobile{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    display: none;
 }
 
 .banner-img {
@@ -91,8 +102,10 @@ li>a {
     margin-top: 20px;
 }
 
+
 .botao-equipe {
     width: 245px;
+    margin-bottom: 20px;
 }
 
 .seta-ajustar {
@@ -107,14 +120,25 @@ li>a {
     justify-content: space-between;
     margin-top: 15px;
     margin-bottom: 30px;
+    /* display: none; */
+}
+
+.trasition-button{
+    transform: rotate(-90deg);
 }
 
 .slick-next{
     right: 0;
+    display: none !important;
+}
+
+div.ul{
+    display: flex;
 }
 
 .slicl-prev{
     left: 0;
+    display: none !important;
 }
 
 footer {
@@ -128,20 +152,52 @@ footer {
     justify-content: space-evenly;
 }
 
+
+
 @media screen and (max-width: 768px) {
 
-    .menuMobile {
+    header{
+    justify-content: space-between;
+    }
+    .botao-equipe {
+        margin-bottom: 30px;
+    }
+        .menuMobile {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
-    ul{
-        flex-direction: column;
-        display: none;
+
+    .container{
+        display: flex;
+        align-items: center;
     }
+    
+    .mm_line{
+        height: 3px;
+        background: #f86a42;
+    }
+
+     ul {
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        margin-top: 20px;
+    }
+
+    nav li:hover {
+        background-color: #f86a42;
+    }
+    ul > li:hover{
+            background-color: #f86a42;
+     }
 
     .contato{
         padding: unset;
+        background:unset;
+        color: #000;
     }
     .titulo-sobre {
         padding: 15px 20px;
@@ -165,11 +221,14 @@ footer {
     .informacoes-adicionais{
         margin: 15px;
     }
+
     .nossa-equipe{
         flex-direction: column;
         margin-bottom: 0;
         text-align: center;
+
     }
+  
     .secao-sobre{
         margin: 18px;
     }
@@ -184,16 +243,22 @@ footer {
     }
 
     ul>li{
-        padding: 0;
+        padding: 10px;
     }
     .banner-img{
         height: 250px;
 
     }
     .slick-next{
-        right: 0;
+       display: none;
     }
     .rodape{
         flex-direction: column;
     }
+
+    .menu-ul{
+    display: flex;        
+    }
+
+
 }
